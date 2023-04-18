@@ -1,0 +1,312 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("assets/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: fixed;
+  /* position: relative; */
+  display: grid;
+}
+
+.mainContainer {
+  height: 500px;
+  width: 500px;
+  background-color: #1b243b;
+  border-radius: 5%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 100px;
+  padding: 10px;
+}
+
+.mainContainer > .top {
+  background-color: #065075;
+  width: 480px;
+  /* height: 40px; */
+  border-radius: 5px;
+  position: relative;
+  /* padding-top: 5px; */
+  padding-left: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+}
+.topHome {
+  padding-top: 10px;
+  height: 60px;
+  font-weight: bold;
+}
+.topGame {
+  padding-top: 5px;
+  height: 40px;
+}
+.mainContainer > .top > label {
+  text-transform: uppercase;
+  color: #ffd102;
+  font-size: 30px;
+  text-align: center;
+  padding-left: 25px;
+  letter-spacing: 3px;
+}
+.mainContainer > img {
+  width: 400px;
+  height: 400px;
+  margin-left: 40px;
+  /* position: relative; */
+}
+#how {
+  margin-top: 20px;
+}
+.homeText {
+  font-size: 2px;
+  /* position: absolute; */
+  margin-top: -100px;
+  /* z-index: 99; */
+  text-align: center;
+  margin-bottom: 25px;
+}
+.topDesign {
+  height: 30px;
+  width: 100px;
+  padding-top: 5px;
+  padding-left: 10px;
+  color: #ffffff;
+  position: absolute;
+  font-weight: bold;
+}
+.scoreIcon {
+  margin-left: 320px;
+  z-index: 99;
+}
+.lifeIcon {
+  margin-left: 200px;
+  z-index: 99;
+}
+#level {
+  background-color: #a5010e;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+#life {
+  background-color: #1591ce;
+  margin-left: 200px;
+  padding-left: 50px;
+}
+
+#score {
+  background-color: #1591ce;
+  margin-left: 320px;
+  padding-left: 50px;
+}
+
+.topDesign > i {
+  width: 10px;
+  height: 10px;
+}
+
+section {
+  width: 300px;
+  height: 280px;
+  background-color: #ffd102;
+  margin: auto;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+section > .imageContainer {
+  width: 260px;
+  height: 240px;
+  background-color: #1c243b;
+  margin: auto;
+}
+section > .imageContainer > img {
+  margin: auto;
+  padding: 10px;
+  height: 240px;
+  width: 260px;
+}
+#answer {
+  margin-top: 10px;
+  margin-left: 90px;
+  width: 300px;
+  height: 30px;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  background-color: #eee;
+  text-align: center;
+}
+#hint {
+  height: 40px;
+  width: 300px;
+  margin-left: 90px;
+  background-color: #d9d9d9;
+  color: #1b243b;
+  padding-top: 8px;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.homeStart {
+  margin-left: 160px;
+  background-color: #ffd102;
+  color: #065075;
+  border: 2px solid white;
+  height: 50px;
+  width: 150px;
+  font-weight: bold;
+  border-radius: 8px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.homeContinue {
+  margin-left: 140px;
+  margin-top: 7px;
+}
+
+.homeStart:hover,
+.homeContinue:hover {
+  color: #1591ce;
+}
+.btn {
+  background-color: #ffd102;
+  color: #1b243b;
+  /* margin-top: 10px; */
+  height: 30px;
+  width: 100px;
+  font-weight: bold;
+  border-radius: 8px;
+  border: 2px solid white;
+}
+.btn:hover {
+  color: #1591ce;
+}
+#btnClear {
+  margin-left: 130px;
+  margin-right: 20px;
+}
+#home {
+  margin-top: -50px;
+}
+#restart {
+  margin-top: -20px;
+}
+.sideIcon {
+  float: left;
+  color: #eee;
+  margin-left: 400px;
+  transition: transform 0.2s;
+}
+.sideIcon:hover {
+  transform: scale(1.5);
+  color: #1591ce;
+}
+
+.howContainer {
+  position: absolute;
+  height: 350px;
+  background-color: #eee;
+  margin-top: -330px;
+  width: 420px;
+  margin-left: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.howContainer > h2 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 2px;
+  color: #1b243b;
+  margin-top: 7px;
+}
+.howText {
+  font-size: 12px;
+}
+
+p {
+  color: #ffffff;
+  margin-top: 20px;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+.homeSection {
+  width: 380px;
+  height: 380px;
+  border: 4px solid #ffd102;
+  background-color: #1b243b;
+  border-radius: 5%;
+}
+
+.promp {
+  display: none;
+  place-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+}
+.promp > .content {
+  background-color: #f9f0f0;
+  color: #1b243b;
+  position: relative;
+  z-index: 99;
+  width: 400px;
+  height: 250px;
+  padding: 1em;
+  border-radius: 1em;
+  text-align: center;
+  border: 6px solid #065075;
+}
+.prompHome > .content {
+  height: 200px;
+}
+.promp > .content .close {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  cursor: pointer;
+}
+.promp.show {
+  display: grid;
+}
+
+.coins {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  margin-top: 20px;
+  margin-left: -50px;
+}
+.btnNext {
+  background-color: #ffd102;
+  color: #1b243b;
+  border-radius: 8px;
+  height: 30px;
+  width: 100px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: -50px;
+  position: absolute;
+  margin-bottom: 10px;
+}
+.btnYesHome {
+  margin-left: -10px;
+  margin-right: 20px;
+}
+.btnNo {
+  margin-left: 10px;
+}

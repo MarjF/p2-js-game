@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logo Guessing Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main class="mainContainer">
+      <div class="top topGame">
+        <div id="level" class="topDesign"></div>
+        <i
+          class="fa-brands fa-gratipay topDesign lifeIcon"
+          style="color: #f24568"
+        ></i>
+        <div id="life" class="topDesign"></div>
+        <i
+          class="fa-solid fa-sack-dollar topDesign scoreIcon"
+          style="color: #ffca38"
+        ></i>
+        <div id="score" class="topDesign"></div>
+      </div>
+      <section>
+        <div class="imageContainer">
+          <img id="logo" src="" alt="Logo" />
+        </div>
+      </section>
+      <div>
+        <a class="show">
+          <i id="home" class="fa-sharp fa-solid fa-house sideIcon"></i
+        ></a>
+      </div>
+      <div>
+        <a class="show"
+          ><i id="restart" class="fa-solid fa-rotate-left sideIcon"></i
+        ></a>
+      </div>
+      <input type="text" id="answer" placeholder="Type your answer here" />
+      <div>
+        <p id="hint">""</p>
+      </div>
+      <button id="btnClear" id="clear" class="btn" onclick="erase()">
+        CLEAR
+      </button>
+      <button id="submit" class="btn show">SUBMIT</button>
+      <div class="promp prompAlert">
+        <div class="content">
+          <span class="close"><b>x</b></span>
+          <h2 class="textMessage">Congratulations!</h2>
+          <p class="textParagraph" style="color: #1b243b; font-size: 15px">
+            <b>You got it right.</b>
+          </p>
+          <i class="fa-solid fa-coins fa-2xl coins" style="color: #f9cd2f"></i
+          ><br /><br />
+          <button class="btnNext" onclick="next()">Next</button>
+        </div>
+      </div>
+      <div class="promp prompHome">
+        <div class="content">
+          <span class="close"><b>x</b></span>
+          <h2 class="textMessage">ARE YOU SURE YOU WANT TO EXIT?</h2>
+          <button class="btn btnYesHome">YES</button>
+          <button class="btn btnYesRestart">YES</button>
+          <button class="btn btnNo">NO</button>
+        </div>
+      </div>
+    </main>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>

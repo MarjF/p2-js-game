@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logo Guessing Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="mainContainer">
+      <img id="how" src="assets/howToPlay.jpg" alt="home" />
+      <div class="howContainer">
+        <h2>How to play?</h2>
+        <ul class="howText">
+          <li>
+            The game is divided into levels. Each level consists of a number of
+            logos that the player must identify.
+          </li>
+          <br />
+          <li>
+            The player starts each level with three lives. If the player
+            incorrectly identifies a logo, they lose one life.
+          </li>
+          <br />
+          <li>
+            The player earns one coin for each correctly identified logo. Coins
+            can be used to unlock new logos, new levels, or other features in
+            the game life will be going to reset to 3 if you pass the current
+            level or once you got a correct answer.
+          </li>
+          <br />
+          <li>
+            If the player correctly identifies all the logos in a level, their
+            lives are reset to three and they move on to the next level. There
+            is no option to skip the level unless you got the correct answer.
+          </li>
+          <br />
+          <li>
+            The game ends when the player loses all three lives. At the end of
+            the game, the player's final score is displayed.
+          </li>
+        </ul>
+
+        <button class="btn homeContinue" onclick="location.href='game.html'">
+          CONTINUE
+        </button>
+        <!-- <button class="btn howBlog" onclick="location.href='blog.html'">
+        </button> -->
+      </div>
+    </main>
+  </body>
+</html>
