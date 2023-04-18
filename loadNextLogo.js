@@ -1,6 +1,6 @@
 import categories from "./data.js";
 
-let currentLogoIndex = 13;
+let currentLogoIndex = 0;
 const logoElement = document.getElementById("logo");
 const hintElement = document.getElementById("hint");
 const answerElement = document.getElementById("answer");
